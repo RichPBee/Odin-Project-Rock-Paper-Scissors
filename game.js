@@ -35,21 +35,21 @@ function playRound(playerSelection, computerSelection) {
                 return "You Lose! Scissors beat Paper!";
         }
     } else {
-        console.log()
+        alert("Player input not valid.");
     }
 }
 
-function checkPlayerChoice(val) {
-    if (val !== "rock" && val !== "paper" && val !== "scissors") {
+function checkPlayerChoice(choice) {
+    while (choice != "rock" && choice != "scissors" && choice != "paper"){
         let newChoice = prompt(`Rock, Paper, Scissors. 
-        Make your choice: `); 
+        Make your choice: `);
         newChoice = newChoice.toLowerCase();
-        checkPlayerChoice(newChoice);
-    } 
-
-    const currentChoice = val;
-    return currentChoice;
+        choice = newChoice;
+    }
+    return choice;
 }
+
+
 
 function game() {
     let playerScore = 0;
@@ -58,11 +58,11 @@ function game() {
     
     for (let i = 0; i < 5; i ++){
         let playerChoice = prompt(`Rock, Paper, Scissors. 
-        Make your choice: `); 
+        Make your choice: `);
         playerChoice = playerChoice.toLowerCase();
-        playerChoice = checkPlayerChoice(playerChoice);
+        let checkedChoice = checkPlayerChoice(playerChoice);
         let computerChoice = getComputerChoice(Math.random() * 2);
-        let result = playRound(playerChoice, computerChoice);
+        let result = playRound(checkedChoice, computerChoice);
         if (result.includes("Win")) {
             playerScore++;
         } else if (result.includes("Lose")) {
