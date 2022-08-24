@@ -1,4 +1,20 @@
-function getComputerChoice(num) {
+//This section of code is solely for DOM manipulation. 
+
+//Function to write text to the screen at first loading. 
+Window.onload = () => {
+
+}
+
+
+
+
+
+
+
+
+// This section of the code deals with the game logic. 
+
+/*function getComputerChoice(num) {
     num = Math.round(num);
     return (num == 0) ? "Rock"
         : num == 1 ? "Paper"
@@ -81,4 +97,4 @@ function game() {
         console.log(`It's a draw! You and the computer both scored ${playerScore} points.`);
     }
 }
-game()
+game() */
