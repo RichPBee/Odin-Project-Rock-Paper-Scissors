@@ -23,3 +23,5 @@ following this, the game logic will be refactored to include DOM methods and to 
 for a brief intro screen.
 
 --23.08.2022
+
+Step 1: HTML Wireframe. 
