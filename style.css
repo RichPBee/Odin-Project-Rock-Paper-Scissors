@@ -1,3 +1,118 @@
 * {
-    border: 1px solid red;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    text-shadow: 0px 1px 0px #8E8E8E, 0px 1px 0px #8E8E8E, ;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    color: #2C3539;
+    background-color: #8E8E8E;
+    text-shadow: 0px 1px 0px #2C3539, 0px 1px 0px #2C3539;
+}
+
+
+.reset-button {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+.play-area {
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-image: linear-gradient(to top, #2C3539, #8E8E8E);
+}
+
+.button-container {
+    flex: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.display-and-scores {
+    flex: 2 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.button-and-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice-button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at center,red, black);
+    box-shadow: 0px 0px 60px 02px red;
+    border: 5px solid black;
+}
+
+.player-score, .computer-score, .display {
+    flex: auto;
+    text-align: center;
+}
+
+.display {
+    box-shadow: 1px 1px 6px 1px;
+}
+
+.computer-score, .player-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+.score-item{
+    background-image: linear-gradient(to top, black, #2C3539);
+    width: 60%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+}
+
+li {
+    background-image: linear-gradient(to top, black, #2C3539);
+    width: 100%;
+    box-shadow: 0px -3px;
+    flex: auto;
+    min-height: 20px;
+}
+
+.footer {
+    background-color: black;
+    height: 20px;
 }
