@@ -1,14 +1,14 @@
-//This section of code is solely for DOM manipulation. 
+//This section of code is solely for DOM manipulation.
 
-//Function to write text to the screen at first loading. 
-Window.onload = () => {
-
+const addWinBar = (winner) => {
+    const scoreBar = document.createElement("div");
+    scoreBar.setAttribute("class", "score-bar");
+    winner.append(scoreBar);
 }
 
-
-
-
-
+addWinBar(document.querySelector("div.player-wins"));
+addWinBar(document.querySelector("div.player-wins"));
+addWinBar(document.querySelector("div.player-wins"));
 
 
 
