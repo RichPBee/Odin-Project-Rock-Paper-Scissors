@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script rel="JavaScript" src="game.js"></script>
+    <!-- <script rel="JavaScript" src="game.js"></script> -->
+    <link rel="Stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>ROCK-PAPER-SCISSORS</h1>
+        <Button class="reset"></Button>
+    </div>
+
+    <div class="play-area">
+    </div>
+
+        <div class="button-container">
+            <button class="choice-button" id="rock">ROCK</button>
+            <button class="choice-button" id="paper">PAPER</button>
+            <button class="choice-button" id="scissors">SCISSORS</button>
+        </div>
+        
+        <div class="display-and-scores">
+            <div class="player-score">
+
+            </div>
+            <div class="display">
+                <p>This will be where the game text is
+                    displayed.
+                </p>
+            </div>
+            <div class="computer-score">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script rel="JavaScript" src="dom_doc.js"></script>
 </body>
 </html>
