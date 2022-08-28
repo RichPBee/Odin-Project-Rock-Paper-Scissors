@@ -12,26 +12,30 @@
 <body>
     <div class="header">
         <h1>ROCK - PAPER - SCISSORS</h1>
-        <Button class="reset-button">
-            <i class="fa fa-refresh" style="font-size: 32px;"></i>
-        </Button>
+        <div class="top-buttons">
+            <!--<button class="round-selector" id="three">3</button>
+            <button class="round-selector" id="five">5</button> -->
+            <Button class="reset-button">
+                <i class="fa fa-refresh" style="font-size: 32px;"></i>
+            </Button>
+        </div>
     </div>
 
     <div class="play-area">
 
         <div class="button-container">
             <div class="button-and-title">
-                <h4 class="button-title">ROCK</h4>            
+                <h1 class="button-title">ROCK</h1>            
                 <button class="choice-button" id="rock"></button>
             </div>
 
             <div class="button-and-title">
-                <h4 class="button-title">PAPER</h4>            
+                <h1 class="button-title">PAPER</h1>            
                 <button class="choice-button" id="paper"></button>
             </div>
 
             <div class="button-and-title">
-                <h4 class="button-title">SCISSORS</h4>            
+                <h1 class="button-title">SCISSORS</h1>            
                 <button class="choice-button" id="scissors"></button>
             </div>
 
@@ -40,22 +44,41 @@
         
         <div class="display-and-scores">
             <div class="player-score">
-                <h4>PLAYER SCORE</h4>
-                <ul class="score-item">
+                <h4 class="scorecard-title">PLAYER SCORE</h4>
+                <ul class="score-item" id="player">
                    
                 </ul>
                 
             </div>
             <div class="display">
-                <p>This will be where the game text is
-                    displayed.
+                <p class="info-text">In a world where computers outclass humans in every way,
+                    there is only one game left that humanity can win.
+                </p>
+                <p class="info-text">
+                    Our cunning hero, Jez, has worked his way to the core
+                    of the AI system M.A.R.K, that controls everything, only to find that 
+                    it can be shut down by winning the only game he could possibly win.
+                </p>   
+                
+                <p class="info-text">
+                    The only game he really knows how to play.
+                </p>
+                <p class="info-text">
+                    Rock. Paper. Scissors.
+                </p>
+                <br class="info-text">
+                </p>
+                <p class="info-text">
+                    Pressing a selection button will begin the game.
+                    Each round, making a selection is final, and will begin the
+                    workings of the machine that will decide your fate.
+                </p>
+                <p class="info-text">Choose wisely.
                 </p>
             </div>
             <div class="computer-score">
-                <h4>CPU SCORE</h4>
-                <ul class="score-item">
-                    <li></li>
-                    
+                <h4 class="scorecard-title">CPU SCORE</h4>
+                <ul class="score-item" id="cpu">                    
                     
                 </ul>
 
@@ -68,6 +91,6 @@
     </div>
 
 
-    <script rel="JavaScript" src="dom_doc.js"></script>
+    <script rel="JavaScript" src="game.js"></script>
 </body>
 </html>

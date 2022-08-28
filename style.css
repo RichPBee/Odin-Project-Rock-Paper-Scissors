@@ -1,4 +1,5 @@
-* {
+button:hover {
+    cursor: pointer;
 }
 
 body {
@@ -18,25 +19,44 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 
-    color: #2C3539;
+    color: black;
     background-color: #8E8E8E;
     text-shadow: 0px 1px 0px #2C3539, 0px 1px 0px #2C3539;
+    background-image: linear-gradient(to bottom, #2C3539, #8E8E8E);
+
 }
 
 
-.reset-button {
+.reset-button, .round-selector {
     height: 32px;
     width: 32px;
     background-color: transparent;
     border: none;
 }
 
+.round-selector {
+    font-size: 32px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
 .play-area {
     display: flex;
     flex: 2 1 auto;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     background-image: linear-gradient(to top, #2C3539, #8E8E8E);
 }
@@ -45,7 +65,7 @@ body {
     flex: auto;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -75,10 +95,20 @@ body {
 .player-score, .computer-score, .display {
     flex: auto;
     text-align: center;
+    margin-top: 80px;
 }
 
 .display {
     box-shadow: 1px 1px 6px 1px;
+    flex: 2 1 auto;
+    flex-wrap: wrap;
+    max-width: 60%;
+    min-width: 60%;
+    font-size: 26px;
+    padding-left: 80px;
+    padding-right: 80px;
+    min-height: 600px;
+    max-height: auto;
 }
 
 .computer-score, .player-score {
@@ -87,6 +117,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 200px;
+    max-width: 200px;
 }
 
 
@@ -94,9 +125,8 @@ ul {
     list-style-type: none;
 }
 .score-item{
-    background-image: linear-gradient(to top, black, #2C3539);
-    width: 60%;
-    height: 20px;
+    
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -104,7 +134,7 @@ ul {
     padding: 0;
 }
 
-li {
+.scorebar {
     background-image: linear-gradient(to top, black, #2C3539);
     width: 100%;
     box-shadow: 0px -3px;
@@ -115,4 +145,41 @@ li {
 .footer {
     background-color: black;
     height: 20px;
+    flex: auto;
+    height: 20px;
+}
+
+.outcome-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: max-content;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.outcome-bar {
+    border: 2px solid black;
+    flex: 0 1 auto;
+    min-height: 60px;
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px black;
+    max-height: min-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outcome-bar > h4 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
